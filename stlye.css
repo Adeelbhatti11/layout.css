@@ -3,6 +3,8 @@ body{
     background-image: url(https://images.pexels.com/photos/548373/pexels-photo-548373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
 .box{
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px 5px whitesmoke;
     border: 3px solid black;
     margin: 0px auto;
      width: 1000px; 
@@ -13,11 +15,13 @@ body{
     color: aliceblue;
 }
 .header{
+    border-radius: 5px 5px 0px 0px;
+    text-shadow: 3px 3px 5px gray ; 
     padding: 10px;
     background: linear-gradient(to right,rgb(107, 244, 107) , rgba(177, 236, 88 ,0.5));
 }
 .nav{
-    padding: 8px;
+    padding: 5px;
     background: linear-gradient(to right,rgb(129, 239, 129) , rgba(110, 145, 58, 0.5));   
 }
 .nav li{
@@ -26,12 +30,13 @@ body{
 }
 .nav li a{
    margin: 0px 5px;
-    font-size: 20px;
+   font-size: 25px;
     text-decoration: none;
     color: aliceblue;
     display: block;
 }
 .nav li a:hover{
+    text-shadow: 3px 3px 5px gray ; 
     background-color: lightblue;
     color: black;
     font-size: 25px;
@@ -47,6 +52,9 @@ body{
     width: 800px;
     background: linear-gradient(to right,rgb(174, 239, 174) , rgba(200, 224, 165, 0.5));
     float: left;
+}
+.content h2{
+    text-shadow: 3px 3px 5px gray ; 
 }
 .sidebar{ 
    
@@ -67,8 +75,113 @@ body{
     font-size: 20px;
 }
 .footer{
-    
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 3px gray ; 
+    border-radius: 0px 0px 5px 5px;
+    font-size: 15px;
     clear: both;
-    color: rgb(11, 244, 244);
-    background-color: bisque;
+    color:black rgb(3, 248, 248);
+    background-color: antiquewhite;
+}
+@media screen and (max-width:1050px) {
+    .box{
+         width: 800px; 
+        height: auto;
+    }
+    .header{
+        padding: 8px;
+    }
+    .nav{
+        padding: 6px;
+    }
+    .nav li a{
+        margin: 0px 4px;
+         font-size: 15px;
+     }
+     .content{
+        padding: 4px;
+        width: 600px;
+    }
+    .sidebar{ 
+        padding: 4px;
+       width: 184px;
+    }
+    .sidebar li a:hover{
+        padding: 4px;
+        font-size: 15px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:830px) {
+    .box{
+         width: 650px; 
+        height: auto;
+    }
+    .header{
+        padding: 6px;
+    }
+    .nav{
+        font-size: 25px;
+        padding: 1px;
+    }
+    .nav li a{
+        margin: 0px 4px;
+         font-size: 20px;
+     }
+     .content{
+        height: 470px;
+        padding: 4px;
+        width: 498px;
+    }
+    .sidebar{
+        font-size: 18px;
+        height: 470px; 
+        padding: 4px;
+       width: 136px;
+    }
+    .sidebar li a:hover{
+        padding: 4px;
+        font-size: 20px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:680px) {
+    .box{
+         width: 500px; 
+        height: auto;
+    }
+    .header{
+        padding: 5px;
+    }
+    .nav{
+        font-size: 18px;
+        padding: 4px;
+    }
+    .nav li a{
+        margin: 0px 4px;
+         font-size: 20px;
+     }
+     .content{
+        height: auto;
+        padding: 5px;
+        width: auto;
+    }
+    .sidebar{ 
+        font-size: 18px;
+        height: auto;
+        padding: 4px;
+       width: 492px;
+    }
+    .sidebar li a:hover{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .footer{
+        height: 18px;
+        font-size: 15px;
+    }
 }
