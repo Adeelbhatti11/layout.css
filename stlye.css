@@ -46,6 +46,7 @@ body{
     width: auto;
 }
 .content{
+    overflow: auto;
     height: 400px;
     margin: 0px;
     padding: 5px;
@@ -63,7 +64,7 @@ body{
     height: 400px;
     background: linear-gradient(to left ,rgb(200, 224, 165),rgba(174, 239, 174, 0.5));
     float: left;
-   width: 180px;
+    width: 180px;
 }
 .sidebar li a{
     text-decoration: none;
