@@ -1,4 +1,4 @@
-ok.
+ok
 g,.
 hn
 i am natholal
